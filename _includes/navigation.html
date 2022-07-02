@@ -1,0 +1,30 @@
+<nav>
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+</nav>
+<!-- 
+  : no sass
+  <nav>
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+        {{ item.name }}
+      </a>
+    {% endfor %}
+  </nav>
+ : not using data
+  <nav>
+    <a href="/" {% if page.url=="/" %}style="color: red;" {% endif %}>
+      Home
+    </a>
+    <a href="/about.html" {% if page.url=="/about.html" %}style="color: red;" {% endif %}>
+      About
+    </a>
+  </nav>
+
+  : no current page indicator
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+  </nav> 
+-->
