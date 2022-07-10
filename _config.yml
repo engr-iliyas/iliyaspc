@@ -1,3 +1,5 @@
+baseurl: /iliyaspc
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
