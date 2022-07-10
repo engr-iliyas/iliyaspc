@@ -2,7 +2,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  
+  - jekyll-relative-links
+
 collections:
   authors:
     output: true
